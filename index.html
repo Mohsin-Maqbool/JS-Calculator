@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   
+    <section>
+    <div class="calculator  col-">
+      <h1>Welcome to My Calculator</h1>
+        <table>
+            <tr>
+                <input type="text" class="display" readonly name="" id="input">
+                <!-- <th colspan="4">3.5</th> -->
+                <!-- <th>3.5</th>
+        <th>3.5</th>
+        <th>3.5</th> -->
+            </tr>
+            <tr class="tr" id="tr2">
+                <!-- + -->
+                <td onclick="press('+')"><span>&#43;</span></td> 
+              <!-- - -->
+                <td onclick="press('-')"><span>&#8722;</span></td>
+              <!-- * -->
+                <td onclick="press('*')"><span>&#215;</span></td>
+              <!-- / -->
+                <td class="last" onclick="press('/')"><span>&#247;</span></td>
+            </tr>
+            <tr class="tr">
+                <td onclick="press(7)" class="td">7</td>
+                <td onclick="press(8)" class="td">8</td>
+                <td onclick="press(9)" class="td">9</td>
+              <td  onclick="ccc()" class="td">Del</td>
+              
+                
+            </tr>
+            <tr class="tr">
+                <td onclick="press(4)" class="td">4</td>
+                <td onclick="press(5)" class="td">5</td>
+                <td onclick="press(6)" class="td">6</td>
+              <!-- = -->
+<td class="last" onclick="eq('=')" id="equal" rowspan="3"><span>&#61;</span></td>
+            </tr>
+            <tr class="tr">
+                <td onclick="press(1)" class="td">1</td>
+                <td onclick="press(2)" class="td">2</td>
+                <td onclick="press(3)" class="td">3</td>
+
+            </tr>
+            <tr style="border-bottom-left-radius: 10px;" class="tr">
+                <td onclick="press(0)" style="border-bottom-left-radius: 10px;" class="td">0</td>
+              <!-- . -->
+                <td onclick="press('.')" class="td"><span>&#8231;</span></td>
+              <!-- C -->
+                <td onclick="clr()" class="td"><span>&#67;</span></td>
+
+            </tr>
+
+        </table>
+    </div>
+</section>
+
+
+
+<script src="app.js"></script>
+</body>
+
+</html>
